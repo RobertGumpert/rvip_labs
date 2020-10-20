@@ -83,7 +83,6 @@ public class CallableSorting implements Callable<String> {
 
     @Override
     public String call() throws Exception {
-        StringBuilder result = new StringBuilder();
         locker.lock();
         try {
             //
@@ -96,17 +95,11 @@ public class CallableSorting implements Callable<String> {
             // Изменяем разделяемый ресурс.
             //
             resource.matrix[indexOfRow] = sorted;
-            //
-            //
-            //
-            result.append("Thread by name ");
-            result.append(Thread.currentThread().getName());
-            result.append(" is finished ");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
             locker.unlock();
         }
-        return result.toString();
+        return "ok";
     }
 }

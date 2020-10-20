@@ -1,13 +1,8 @@
 package concurrency;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
+
 import java.util.*;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class MergeSort {
@@ -67,6 +62,34 @@ public class MergeSort {
         //
         //
         StringBuilder builder = new StringBuilder();
+        builder.append(commonResource);
+        builder.append("Result in time elapsed : ");
+        builder.append(timeElapsed);
+        return builder.toString();
+    }
+
+    public String SortedForkJoinPool(int[][] matrix) {
+        //
+        // Создаём разделяемый ресурс.
+        //
+        CommonResource commonResource = new CommonResource(matrix);
+        int length = matrix.length;
+        StringBuilder builder = new StringBuilder();
+        ReentrantLock locker = new ReentrantLock();
+        var pool = new ForkJoinPool();
+        //
+        //
+        //
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < length; i++) {
+            var sorting = new RecursiveTaskSorting(commonResource, locker, i);
+            pool.invoke(sorting);
+        }
+        long finish = System.currentTimeMillis();
+        float timeElapsed = (finish - start) / 100F;
+        //
+        //
+        //
         builder.append(commonResource);
         builder.append("Result in time elapsed : ");
         builder.append(timeElapsed);

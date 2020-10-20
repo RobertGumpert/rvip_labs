@@ -57,6 +57,13 @@ public class main {
         //
         //
         //
+        System.out.println("Сортируем во множестве потоков с помощью ForkJoinPool...");
+        copy = getCopy();
+        result = concurrency.SortedForkJoinPool(copy);
+        System.out.println(result + "\n");
+        //
+        //
+        //
         System.out.println("Сортируем во множестве потоков с помощью Thread...");
         copy = getCopy();
         concurrency.SortedWithThreadAndRunnable(copy);

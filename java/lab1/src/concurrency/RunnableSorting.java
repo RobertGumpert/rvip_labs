@@ -75,7 +75,6 @@ public class RunnableSorting implements Runnable {
 
     @Override
     public void run() {
-        StringBuilder result = new StringBuilder();
         locker.lock();
         try {
             //
@@ -88,13 +87,6 @@ public class RunnableSorting implements Runnable {
             // Изменяем разделяемый ресурс.
             //
             resource.matrix[indexOfRow] = sorted;
-            //
-            //
-            //
-            result.append("Thread by name ");
-            result.append(Thread.currentThread().getName());
-            result.append(" is finished ");
-            System.out.println(result.toString());
         } catch (Exception e) {
             System.out.println(e.getMessage());
         } finally {
