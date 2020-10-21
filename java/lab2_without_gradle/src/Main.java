@@ -1,5 +1,6 @@
 import mpi.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 // ЧТО ДЕЛАЕТ ЛИБА?
@@ -13,6 +14,7 @@ import java.util.Arrays;
 //                                      MPJ_HOME=C:/Labs/rvip/rvip_labs/java/labs_libs/mpj
 //
 public class Main {
+
 
     private static final int MASTER_PROCESS_RANK = 0;
     private static int[][] array = new int[][]{
