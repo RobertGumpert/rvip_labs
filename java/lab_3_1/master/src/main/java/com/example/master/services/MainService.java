@@ -1,18 +1,11 @@
 package com.example.master.services;
 
 import com.example.master.models.SortingViewModel;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.web.client.RestTemplate;
-
 import java.util.*;
 import java.util.concurrent.*;
 
 
 public class MainService {
-
-    private Map<Integer, Integer> dict = new HashMap<Integer, Integer>();
 
     private String[] services = new String[]{
             "http://localhost:6491",
@@ -41,18 +34,4 @@ public class MainService {
         executor.shutdown();
         return viewModel;
     }
-
-//    private void send(int[] row, String url) {
-//        RestTemplate restTemplate = new RestTemplate();
-//        HttpHeaders headers = new HttpHeaders();
-//        headers.setContentType(MediaType.APPLICATION_JSON);
-//        HttpEntity<SortingViewModel> request = new HttpEntity<SortingViewModel>(
-//                new SortingViewModel().setRows(
-//                        new int[][]{
-//                                row
-//                        }
-//                )
-//                );
-//
-//    }
 }
