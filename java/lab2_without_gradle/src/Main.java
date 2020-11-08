@@ -1,6 +1,6 @@
 import mpi.*;
 
-import java.util.ArrayList;
+
 import java.util.Arrays;
 
 // ЧТО ДЕЛАЕТ ЛИБА?

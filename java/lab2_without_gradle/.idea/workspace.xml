@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b70f9f3b-c2c9-4238-b5d0-eddf796f9145" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab2/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51">
-              <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+            <state relative-caret-position="506">
+              <caret line="82" column="89" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,11 +31,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -53,10 +55,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1928" />
-    <option name="y" value="-667" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="170" />
+    <option name="y" value="91" />
+    <option name="width" value="1026" />
+    <option name="height" value="546" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -64,8 +66,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,11 +86,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab_3_1/master/demo" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -141,29 +143,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-667" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21801706" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22163388" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="SOQL Query" />
-      <window_info anchor="bottom" id="Log Analyzer" />
-      <window_info anchor="bottom" id="Anonymous Apex" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49761418" visible="true" weight="0.37111112" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49761418" weight="0.26777777" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49966103" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49966103" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5023858" side_tool="true" visible="true" weight="0.37111112" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5023858" side_tool="true" weight="0.37111112" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="bottom" id="Log Analyzer" order="11" />
+      <window_info anchor="bottom" id="SOQL Query" order="12" />
+      <window_info anchor="bottom" id="Anonymous Apex" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -195,8 +197,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+        <state relative-caret-position="506">
+          <caret line="82" column="89" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -204,9 +206,15 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="646">
-          <caret line="38" column="8" lean-forward="true" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="20" />
         </state>
       </provider>
     </entry>
