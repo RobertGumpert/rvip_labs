@@ -10,7 +10,6 @@ public class ExecutorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication app = new SpringApplication(ExecutorApplication.class);
-		// app.setDefaultProperties(Collections.singletonMap("server.port", "6491"));
 		app.run(args);
 	}
 

@@ -14,7 +14,10 @@ public class MainService {
     };
 
     public SortingViewModel Sorting(SortingViewModel viewModel) {
+        System.out.println("Исходная матрица: ");
+        System.out.println(Arrays.deepToString(viewModel.getRows()));
         List<Future<SortingViewModel>> futures = new ArrayList<>();
+        long start = System.currentTimeMillis();
         ExecutorService executor = Executors.newFixedThreadPool(viewModel.getRows().length);
         for (int i = 0; i < viewModel.getRows().length; i++) {
             int service = i % services.length;
@@ -26,12 +29,18 @@ public class MainService {
         for (Future<SortingViewModel> future : futures) {
             try {
                 SortingViewModel result = future.get();
-                System.out.println(result);
             } catch (InterruptedException | ExecutionException e) {
                 System.err.println("task interrupted");
             }
         }
+        long finish = System.currentTimeMillis();
+        float timeElapsed = (finish - start) / 100F;
         executor.shutdown();
+        StringBuilder builder = new StringBuilder();
+        builder.append("Result in time elapsed : ");
+        builder.append(timeElapsed);
+        System.out.println(Arrays.deepToString(viewModel.getRows()));
+        System.out.println(builder.toString());
         return viewModel;
     }
 }

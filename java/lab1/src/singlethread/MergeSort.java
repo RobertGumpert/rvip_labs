@@ -72,7 +72,6 @@ public class MergeSort {
                 j--;
             }
         }
-        System.out.println("Is finished");
         return sorted;
     }
 
